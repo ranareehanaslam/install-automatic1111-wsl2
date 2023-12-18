@@ -45,16 +45,18 @@ Ensure that you have WSL2 installed and set up on your Windows machine. You can 
 
 5. **Install NVIDIA CUDA Toolkit**
 
-   If you have an NVIDIA GPU, install the CUDA toolkit:
-
-   ```bash
-   sudo apt install nvidia-cuda-toolkit -y
-   ```
 ### Additional Step: Installing NVIDIA CUDA Deep Neural Network Library (cuDNN)
 
 ```bash
 sudo DEBIAN_FRONTEND=noninteractive apt-get -yq install nvidia-cudnn
 ```
+
+   If you have an NVIDIA GPU, install the CUDA toolkit:
+
+   ```bash
+   sudo apt install nvidia-cuda-toolkit -y
+   ```
+
 
 6. **Download and Install automatic1111**
 
