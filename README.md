@@ -40,7 +40,7 @@ Ensure that you have WSL2 installed and set up on your Windows machine. You can 
    Install Python 3.10 and other required dependencies:
 
    ```bash
-   sudo apt install python3.10 python3.10-venv python3-pip git python3.10-tk ffmpeg libsm6 libxext6 libgl1 wget -y
+   sudo apt install unzip git-lfs python3.10 python3.10-venv python3-pip git python3.10-tk ffmpeg libsm6 libxext6 libgl1 wget libcairo2-dev -y
    ```
 
 5. **Install NVIDIA CUDA Toolkit**
@@ -50,6 +50,11 @@ Ensure that you have WSL2 installed and set up on your Windows machine. You can 
    ```bash
    sudo apt install nvidia-cuda-toolkit -y
    ```
+### Additional Step: Installing NVIDIA CUDA Deep Neural Network Library (cuDNN)
+
+```bash
+sudo DEBIAN_FRONTEND=noninteractive apt-get -yq install nvidia-cudnn
+```
 
 6. **Download and Install automatic1111**
 
