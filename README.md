@@ -57,6 +57,10 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get -yq install nvidia-cudnn
    sudo apt install nvidia-cuda-toolkit -y
    ```
 
+   after this just simply run this command:
+   ```bash 
+   export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
+   ```
 
 6. **Download and Install automatic1111**
 
